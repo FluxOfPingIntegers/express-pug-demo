@@ -1,0 +1,27 @@
+{
+  "name": "express-pug-demo",
+  "version": "1.0.0",
+  "description": "A small app for demonstrating how to use the Pug templating engine with the Express framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FluxOfPingIntegers/express-pug-demo.git"
+  },
+  "author": "Ryan Schleck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FluxOfPingIntegers/express-pug-demo/issues"
+  },
+  "homepage": "https://github.com/FluxOfPingIntegers/express-pug-demo#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
