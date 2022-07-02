@@ -21,13 +21,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/pugs', pugRoutes);
 
 app.use((req, res, next) => {
-  // searches for a html template with the name specified in the first argument
-  // the second argument is an object with variables that can be used in the template
-  res.render('home', {
-    pageTitle: 'Pug-Express Home',
-    path: '/'
-  });
+  res.status(404).render('404', {pageTitle: 'Page Not Found'});
 })
 
-// setting the port # for our server.  The url is localhost:3000
+// setting the port # for our server.  The starting url is localhost:3000/pugs/new
 app.listen(3000);
