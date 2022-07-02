@@ -16,3 +16,18 @@ html(lang="en")
                 label(for="owner") Who Is Dogs Owner?
                 input(type="text", name="owner")
                 input(type="submit")
+            
+        //-
+            <body>
+              <div class="pug-container">
+                <form action="/pugs/create" method="POST">
+                  <label for="name">Enter Pugs Name</label>
+                  <input type="text" name="name">
+                  <label for="age">Enter Pugs Age</label>
+                  <input type="number" name="age">
+                  <label for="owner">Who Is Dogs Owner?</label>
+                  <input type="text" name="owner">
+                  <input type="submit">
+                </form>
+              </div>
+            </body>
