@@ -11,10 +11,14 @@ app.set('view engine', 'pug');
 // telling express where to find our templates.  This IS views by default
 app.set('views', 'views');
 
+const pugRoutes = require('./routes/pug');
+
 app.use(bodyParser.urlencoded({extended: false}));
 
 // allows our html files to search within the public folder for links & scripts
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/pugs', pugRoutes);
 
 app.use((req, res, next) => {
   // searches for a html template with the name specified in the first argument
