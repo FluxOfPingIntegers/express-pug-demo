@@ -1,7 +1,6 @@
 const path = require('path');
 
 const express = require('express');
-
 const router = express.Router();
 
 // this is our array of pugs that'll be held in memory
@@ -14,7 +13,6 @@ router.get('/new', (req, res, next) => {
     path: './new'
   });
 });
-
 
 // /pugs/create => POST
 router.post('/create', (req, res, next) => {
@@ -41,3 +39,4 @@ router.get('/', (req, res, next) => {
 
 // exports our middleware
 module.exports = router;
+
